@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shooter Game</title>
+
+  <!-- PWA: Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Color del tema del navegador -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- Evita zoom en móvil -->
+  <meta name="viewport" content="user-scalable=0"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="game.css">
+
+  <!-- Scripts del juego -->
+  <script src="Game.js"></script>
+  <script src="Entity.js"></script>
+  <script src="Character.js"></script>
+  <script src="Player.js"></script>
+  <script src="Opponent.js"></script>
+  <script src="Shot.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+  <!-- Botones del juego -->
+  <button id="pause" class="gamebutton" onclick="this.blur();">
+    Pausa
+  </button>
+
+  <button id="reset" class="gamebutton" onclick="this.blur();">
+    NUEVA PARTIDA
+  </button>
+
+  <!-- Botón de instalación PWA -->
+  <button id="installBtn" hidden>
+    Instalar aplicación
+  </button>
+
+</body>
+</html>
